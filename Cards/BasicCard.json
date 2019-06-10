@@ -1,0 +1,37 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Publish Adaptive Card schema",
+            "weight": "bolder",
+            "size": "medium",
+            "horizontalAlignment": "right"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Hello Now that we have defined the main rules and features of the format, we need to produce a schema and publish it to GitHub. The schema will be the starting point of our reference documentation.",
+            "wrap": true
+        }
+    ],
+    
+    "actions": [
+        {
+          
+            "type": "Action.Submit",
+            "id": "btnBuy",
+            "title": "Buy",
+            "data": {
+            
+                "msteams": {
+                    "type": "task/fetch"
+                    
+                },
+                "taskModule": "customform"
+            }
+            
+        }
+    ]
+}
